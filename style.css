@@ -1,0 +1,274 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+img,
+li,
+ol,
+ul,
+section {
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article,
+section {
+    display: block;
+}
+
+html,
+body {
+    background: #150f27;
+    font-family: 'Poppins', helvetica, arial, sans-serif;
+    font-size: 16px;
+    color: #222;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+#name h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    margin-bottom: -6px;
+
+}
+
+#name h2 {
+    font-size: 1em;
+    margin-left: 2px;
+    font-family: 'poppins', Helvetica, Arial, sans-serif;
+}
+
+#cv-body {
+    padding: 0 40px;
+}
+
+#dp {
+    width: 12.5%;
+    float: left;
+    margin-right: 30px;
+}
+
+#dp img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    color: #4f446d;
+}
+
+#page {
+    width: 90%;
+    max-width: 800px;
+    background: #ffffff;
+    margin: 30px auto;
+}
+
+.cv-head {
+    padding: 35px 35px;
+    border-bottom: 2px solid #09093a;
+    background: #cac5db;
+}
+
+#name {
+    float: left;
+}
+
+#contact {
+    float: right;
+}
+
+#contact ul {
+    list-style-type: none;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+
+#contact ul li {
+    margin-bottom: 3px;
+    color: #444;
+}
+
+#contact ul li a,
+a[href^=tel] {
+    color: #444;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    color: #cf8a05;
+}
+
+
+section {
+    padding: 20px 0 0;
+}
+
+.col-title {
+    float: left;
+    width: 25%;
+    border-right: 3px solid #09093a;
+}
+
+.col-description {
+    float: right;
+    width: 72.5%;
+    border-top: 3px solid #09093a
+}
+
+.col-title h1 {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-size: 1.0em;
+    width: 100%;
+    color: #2c2cac;
+
+}
+
+.col-description h2 {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: -2px;
+}
+
+.cvDetails {
+    font-size: 0.8em;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.skills {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #444;
+}
+
+.skills tr th {
+    margin-right: 3px;
+    text-align: left;
+}
+
+.skills tr td {
+    margin: 33px;
+    text-align: left;
+
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+
+body {
+    background: rgb(30, 30, 40);
+}
+
+form {
+    max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+form h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'poppins', Helvetica, Arial, sans-serif;
+    margin-bottom: -6px;
+    padding: 5px
+}
+
+.feedback-input {
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #3c5df1;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #3c5df1;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.btn-submit{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #3c5df1;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+.btn-cancel{
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #f30d05;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    background-color: #09093a;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+[type="submit"]:hover {
+    background: #CC4949;
+}

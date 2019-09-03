@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Osemwingie Oshodin CV</title>
+
+   <meta name="viewport" content="width=device-width" />
+   <meta name="description" content="ie=edge" />
+   <meta charset="UTF-8">
+
+   <link type="text/css" rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   <script src="js/main.js"></script>
+</head>
+
+<body id="top">
+   <div id="page">
+      <div class="cv-head">
+         <div id="dp">
+            <img src="https://res.cloudinary.com/codose/image/upload/v1566608150/StartNg%20Task2/codose_ttpjnz.jpg"
+               alt="Profile image">
+         </div>
+
+         <div id="name">
+            <h1>Osemwingie Oshodin</h1>
+            <h2>Android and web developer</h2>
+            <div id="contact">
+               <ul>
+                  <li>Tel: +2348165757132</li>
+                  <li>Email: <a href="mailto:osemwingieoshodin@gmail.com"
+                        target="_blank">osemwingieoshodin@gmail.com</a>
+                  </li>
+                  <li><a href="https://twitter.com/codose_">Twitter: @codose</a> </li>
+                  <li><a href="https://github.com/codose">Github.com/codose</a></li>
+               </ul>
+            </div>
+         </div>
+
+
+         <div class="clear"></div>
+      </div>
+
+      <div id="cv-body">
+
+         <section>
+            <div class="col-title">
+               <h1>Skills</h1>
+            </div>
+            <div class="col-description">
+               <table class="skills">
+                  <tr>
+                     <th>Skill</th>
+                     <th><i>Proficiency Level</i></th>
+                  </tr>
+                  <tr>
+                     <td>Microsoft apps and tools</td>
+                     <td><i>Advanced</i></td>
+                  </tr>
+                  <tr>
+                     <td>Adobe Illustrator and Photoshop</td>
+                     <td><i>Intermediate</i></td>
+                  </tr>
+                  <tr>
+                     <td>Android Development</td>
+                     <td><i>Intermediate</i></td>
+                  </tr>
+                  <tr>
+                     <td>Html and CSS</td>
+                     <td><i>Advanced</i></td>
+                  </tr>
+                  <tr>
+                     <td>Python</td>
+                     <td><i>Intermediate</i></td>
+                  </tr>
+                  <tr>
+                     <td>Google Digital Skills</td>
+                     <td><i>Advanced</i></td>
+                  </tr>
+               </table>
+            </div>
+            <div class="clear"></div>
+         </section>
+
+         <section>
+            <div class="col-title">
+               <h1>Education</h1>
+            </div>
+
+            <div class="col-description">
+               <article>
+                  <h2>Immaculate Conception college</h2>
+                  <p class="cvDetails"></p>
+                  <p>2007-2008</p>
+               </article>
+               <article>
+                  <h2>Kalac Loyola secondary school</h2>
+                  <p class="cvDetails"></p>
+                  <p>2008-2013</p>
+               </article>
+               <article>
+                  <h2>Obafemi Awolowo University</h2>
+                  <p class="cvDetails">BSc. Food Science and technology</p>
+                  <p>2015-present</p>
+               </article>
+            </div>
+            <div class="clear"></div>
+         </section>
+         <section>
+            <div class="col-title">
+               <h1>Work Experience</h1>
+            </div>
+
+            <div class="col-description">
+               <article>
+                  <h2>Website Maintenance</h2>
+                  <p class="cvDetails">July 2019 - Present</p>
+                  <p>Website Maintenance at NAFSTS, OAU</p>
+               </article>
+            </div>
+            <div class="clear"></div>
+         </section>
+         <button class="open-button" onclick="openForm()">Contact Me</button>
+      </div>
+   </div>
+   <div class="popup validateorm" id="contactForm">
+
+      <form name="contact" onsubmit="return validateForm()">
+         <h1>Contact Me</h1>
+         <input name="name" type="text" class="feedback-input" placeholder="Name" required="required" />
+         <input name="email" id="email" type="email"class="feedback-input" placeholder="Email" required="required" />
+         <input name="title"  type="text" class="feedback-input" placeholder="Title" required="required" />
+         <textarea name="text" class="feedback-input" placeholder="Message" required="required"></textarea>
+         <button type="submit" class="btn-submit" >Submit</button>
+         <div>
+            <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+         </div>
+
+      </form>
+
+   </div>
+
+</body>
+
+</html>
