@@ -18,7 +18,7 @@ function validateForm() {
         return false;
     }
 
-    var x = document.forms["input"]["email"].value;
+    var x = document.contact.email.value;
     var email = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   
     if (x !== null && x !== "" && x.match(email)) {
