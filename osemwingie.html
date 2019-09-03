@@ -10,7 +10,7 @@
 
    <link type="text/css" rel="stylesheet" href="style.css">
    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
+   <script src="js/main.js"></script>
 </head>
 
 <body id="top">
@@ -41,38 +41,42 @@
       </div>
 
       <div id="cv-body">
-         
+
          <section>
             <div class="col-title">
                <h1>Skills</h1>
             </div>
             <div class="col-description">
-                  <table class="skills">
-                        <tr>
-                              <th>Skill</th>
-                              <th><i>Proficiency Level</i></th>
-                           </tr>
-                     <tr>
-                        <td>Microsoft apps and tools</td>
-                        <td><i>Advanced</i></td>
-                     </tr>
-                     <tr>
-                        <td>Adobe Illustrator and Photoshop</td>
-                        <td><i>Intermediate</i></td>
-                     </tr>
-                     <tr>
-                        <td>Html and CSS</td>
-                        <td><i>Advanced</i></td>
-                     </tr>
-                     <tr>
-                        <td>Python</td>
-                        <td><i>Intermediate</i></td>
-                     </tr>
-                     <tr>
-                        <td>Google Digital Skills</td>
-                        <td><i>Advanced</i></td>
-                     </tr>
-                  </table>
+               <table class="skills">
+                  <tr>
+                     <th>Skill</th>
+                     <th><i>Proficiency Level</i></th>
+                  </tr>
+                  <tr>
+                     <td>Microsoft apps and tools</td>
+                     <td><i>Advanced</i></td>
+                  </tr>
+                  <tr>
+                     <td>Adobe Illustrator and Photoshop</td>
+                     <td><i>Intermediate</i></td>
+                  </tr>
+                  <tr>
+                     <td>Android Development</td>
+                     <td><i>Intermediate</i></td>
+                  </tr>
+                  <tr>
+                     <td>Html and CSS</td>
+                     <td><i>Advanced</i></td>
+                  </tr>
+                  <tr>
+                     <td>Python</td>
+                     <td><i>Intermediate</i></td>
+                  </tr>
+                  <tr>
+                     <td>Google Digital Skills</td>
+                     <td><i>Advanced</i></td>
+                  </tr>
+               </table>
             </div>
             <div class="clear"></div>
          </section>
@@ -102,23 +106,39 @@
             <div class="clear"></div>
          </section>
          <section>
-               <div class="col-title">
-                  <h1>Work Experience</h1>
-               </div>
-   
-               <div class="col-description">
-                  <article>
-                     <h2>Website Maintenance</h2>
-                     <p class="cvDetails">July 2019 - Present</p>
-                     <p>Website Maintenance at NAFSTS, OAU</p>
-                  </article>
-               </div>
-               <div class="clear"></div>
-            </section>
-   
+            <div class="col-title">
+               <h1>Work Experience</h1>
+            </div>
 
+            <div class="col-description">
+               <article>
+                  <h2>Website Maintenance</h2>
+                  <p class="cvDetails">July 2019 - Present</p>
+                  <p>Website Maintenance at NAFSTS, OAU</p>
+               </article>
+            </div>
+            <div class="clear"></div>
+         </section>
+         <button class="open-button" onclick="openForm()">Contact Me</button>
       </div>
    </div>
+   <div class="popup validateorm" id="contactForm">
+
+      <form name="contact" onsubmit="return validateForm()">
+         <h1>Contact Me</h1>
+         <input name="name" type="text" class="feedback-input" placeholder="Name" required="required" />
+         <input name="email" id="email" type="email"class="feedback-input" placeholder="Email" required="required" />
+         <input name="title"  type="text" class="feedback-input" placeholder="Title" required="required" />
+         <textarea name="text" class="feedback-input" placeholder="Message" required="required"></textarea>
+         <button type="submit" class="btn-submit" >Submit</button>
+         <div>
+            <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+         </div>
+
+      </form>
+
+   </div>
+
 </body>
 
 </html>
