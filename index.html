@@ -99,8 +99,8 @@
                </article>
                <article>
                   <h2>Obafemi Awolowo University</h2>
-                  <p class="cvDetails">BSc. Food Science and technology</p>
-                  <p>2015-present</p>
+                  <p class="cvDetails">BSc. Food Science and technology (in view)</p>
+                  <p>2015-2020</p>
                </article>
             </div>
             <div class="clear"></div>
@@ -116,20 +116,28 @@
                   <p class="cvDetails">July 2019 - Present</p>
                   <p>Website Maintenance at NAFSTS, OAU</p>
                </article>
+               <article>
+                  <h2>Team Project at HNG pre-Internship</h2>
+                  <p class="cvDetails">August 2019 - Present</p>
+                  <p>Worked on a mobile app for a fictional resturant.</p>
+               </article>
             </div>
             <div class="clear"></div>
          </section>
          <button class="open-button" onclick="openForm()">Contact Me</button>
       </div>
    </div>
-   <div class="popup validateorm" id="contactForm">
+   <div class="popup" id="contactForm">
 
-      <form name="contact" onsubmit="return validateForm()">
+      <form name="contact" action="" method="POST" onsubmit="return validateForm()">
          <h1>Contact Me</h1>
-         <input name="name" type="text" class="feedback-input" placeholder="Name" required="required" />
-         <input name="email" id="email" type="email"class="feedback-input" placeholder="Email" required="required" />
+         <input name="name" id="name-input" type="text" class="feedback-input" placeholder="Name" required="required" onblur="validate('name-input', 'check', 4, 'Name', 'Four')" >
+         <span id='check' class='check'></span>
+         <input name="email" id="email" type="email"class="feedback-input" placeholder="Email" required="required" onblur="return validMail()"/>
+         <span id="mCheck" class="check"></span>
          <input name="title"  type="text" class="feedback-input" placeholder="Title" required="required" />
-         <textarea name="text" class="feedback-input" placeholder="Message" required="required"></textarea>
+         <textarea name="text" id= "message" class="feedback-input" placeholder="Message" required="required" onblur="validate('message', 'check2', 20, 'Message', 'Twenty')"></textarea>
+         <span id='check2' class='check'></span>
          <button type="submit" class="btn-submit" >Submit</button>
          <div>
             <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>

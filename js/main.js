@@ -24,7 +24,24 @@ function validateForm() {
     if (x !== null && x !== "" && x.match(email)) {
       return true;
     } else {
-      alert("Input email address, please!");
+        
+      alert("Please input a correct email address, please!");
       return false;
     }
+}
+
+function validate(n,c,l,d,e){
+    var name = document.getElementById(n);
+    var check = document.getElementById(c);
+
+    if (name.value.length < l){
+        check.innerHTML = d + ' characters must be more than '+e;
+        check.style.display = 'block';
+        check.style.color = 'red';
+    }else{
+        check.style.display = 'none'
+    }
+
+    
+
 }
