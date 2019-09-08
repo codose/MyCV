@@ -5,9 +5,24 @@
    <title>Osemwingie Oshodin CV</title>
 
    <meta name="viewport" content="width=device-width" />
-   <meta name="description" content="ie=edge" />
    <meta name="Author" content="Osemwingie Oshodin"/>
 	<meta name="keywords" content="CV Resume">
+	
+	<meta name="description" content="Osemwingie's CV, detailed description of Skills, past Jobs, Educational and Experiences">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codose.000webhostapp.com">
+    <meta property="og:title" content="Osemwingie Oshodin's CV">
+    <meta property="og:description" content="Osemwingie's CV, detailed description of Skills, past Jobs, Educational and Experiences">
+    <meta property="og:image" content="https://res.cloudinary.com/codose/image/upload/v1566608150/StartNg%20Task2/codose_ttpjnz.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codose.000webhostapp.com">
+    <meta property="twitter:title" content="@codose_">
+    <meta property="twitter:description" content="Osemwingie's CV, detailed description of Skills, past Jobs, Educational and Experiences">
+    <meta property="twitter:image" content="https://res.cloudinary.com/codose/image/upload/v1566608150/StartNg%20Task2/codose_ttpjnz.jpg">
    <meta charset="UTF-8">
 
    <link type="text/css" rel="stylesheet" href="style.css">
@@ -129,7 +144,7 @@
    </div>
    <div class="popup" id="contactForm">
 
-      <form name="contact" action="contact.php" method="POST" onsubmit="return validateForm()">
+      <form name="contact" method="POST" onsubmit="return validateForm()">
          <h1>Contact Me</h1>
          <input name="name" id="name-input" type="text" class="feedback-input" placeholder="Name" required="required" onblur="validate('name-input', 'check', 4, 'Name', 'Four')">
          <span id='check' class='check'></span>
@@ -156,7 +171,6 @@
          fwrite($fp, $data);
          fclose($fp);
          echo "<script type='text/javascript'>alert('Your message has been received, I will get back to you soon')</script>";
-         
       }
 
       ?>
