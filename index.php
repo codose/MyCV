@@ -6,6 +6,8 @@
 
    <meta name="viewport" content="width=device-width" />
    <meta name="description" content="ie=edge" />
+   <meta name="Author" content="Osemwingie Oshodin"/>
+	<meta name="keywords" content="CV Resume">
    <meta charset="UTF-8">
 
    <link type="text/css" rel="stylesheet" href="style.css">
@@ -17,8 +19,7 @@
    <div id="page">
       <div class="cv-head">
          <div id="dp">
-            <img src="https://res.cloudinary.com/codose/image/upload/v1566608150/StartNg%20Task2/codose_ttpjnz.jpg"
-               alt="Profile image">
+            <img src="https://res.cloudinary.com/codose/image/upload/v1566608150/StartNg%20Task2/codose_ttpjnz.jpg" alt="Profile image">
          </div>
 
          <div id="name">
@@ -27,8 +28,7 @@
             <div id="contact">
                <ul>
                   <li>Tel: +2348165757132</li>
-                  <li>Email: <a href="mailto:osemwingieoshodin@gmail.com"
-                        target="_blank">osemwingieoshodin@gmail.com</a>
+                  <li>Email: <a href="mailto:osemwingieoshodin@gmail.com" target="_blank">osemwingieoshodin@gmail.com</a>
                   </li>
                   <li><a href="https://twitter.com/codose_">Twitter: @codose</a> </li>
                   <li><a href="https://github.com/codose">Github.com/codose</a></li>
@@ -129,22 +129,35 @@
    </div>
    <div class="popup" id="contactForm">
 
-      <form name="contact" action="" method="POST" onsubmit="return validateForm()">
+      <form name="contact" action="contact.php" method="POST" onsubmit="return validateForm()">
          <h1>Contact Me</h1>
-         <input name="name" id="name-input" type="text" class="feedback-input" placeholder="Name" required="required" onblur="validate('name-input', 'check', 4, 'Name', 'Four')" >
+         <input name="name" id="name-input" type="text" class="feedback-input" placeholder="Name" required="required" onblur="validate('name-input', 'check', 4, 'Name', 'Four')">
          <span id='check' class='check'></span>
-         <input name="email" id="email" type="email"class="feedback-input" placeholder="Email" required="required" onblur="return validMail()"/>
+         <input name="email" id="email" type="email" class="feedback-input" placeholder="Email" required="required" onblur="return validMail()" />
          <span id="mCheck" class="check"></span>
-         <input name="title"  type="text" class="feedback-input" placeholder="Title" required="required" />
-         <textarea name="text" id= "message" class="feedback-input" placeholder="Message" required="required" onblur="validate('message', 'check2', 20, 'Message', 'Twenty')"></textarea>
+         <input name="title" type="text" class="feedback-input" placeholder="Title" required="required" />
+         <textarea name="message" id="message" class="feedback-input" placeholder="Message" required="required" onblur="validate('message', 'check2', 20, 'Message', 'Twenty')"></textarea>
          <span id='check2' class='check'></span>
-         <button type="submit" class="btn-submit" >Submit</button>
+         <button type="submit" class="btn-submit">Submit</button>
          <div>
             <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
          </div>
 
       </form>
+      <?php
+      if (isset($_POST['name'])) {
+         $name = $_POST['name'];
+         $email = $_POST['email'];
+         $message = $_POST['message'];
+         $title = $_POST['title'];
 
+         $data = "<b>Name:</b> $name <br> <b>Email:</b> $email <br> <b>Title:</b> $title <br><b>Message:</b>$message <br> <hr>";
+         $fp = fopen('data.html', 'a');
+         fwrite($fp, $data);
+         fclose($fp);
+      }
+
+      ?>
    </div>
 
 </body>
