@@ -155,6 +155,8 @@
          $fp = fopen('data.html', 'a');
          fwrite($fp, $data);
          fclose($fp);
+         echo "<script type='text/javascript'>alert('Your message has been received, I will get back to you soon')</script>";
+         
       }
 
       ?>
